@@ -123,3 +123,7 @@ h1 {
 .lista strong {
     color: #203a43;
 }
+table {
+    width: 100%;
+    margin-top: 20px;
+}
