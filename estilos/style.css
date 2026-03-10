@@ -1,0 +1,125 @@
+body {
+    margin: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #5f7cff,#8ea2ff);
+
+}
+p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #2c2c2c;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+
+.contenido {
+    width: 85%;
+    margin: auto;
+    padding: 60px 0;
+}
+h1 {
+    text-align: center;
+    background: #1f1f2e ;
+    color: white;
+    padding: 25px;
+    border-radius: 25px;
+    margin-bottom: 60px;
+    font-size: 32px;
+}
+.bloque1 {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: 80px;
+}
+.bloque2 {
+    flex-direction: row-reverse;
+    display: flex;
+    gap: 60px;
+    margin-top: 80px;
+}
+.texto {
+    flex: 1;
+}
+.texto h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #1f1f2e;
+}
+.texto {
+    line-height: 1.6;
+    color: #333;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgb(0, 0, 0, 0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.texto:hover {
+    transform: translateX(10px);
+    box-shadow: 0 12px 25px rgb(0, 0, 0, 15);
+}
+
+.imagen img {
+    width: 350px;
+    height:250px;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    transition: trasform 0.3s ease;
+}
+.imagen img:hover {
+    transform: scale(1.05);
+}
+.tarjeta {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgb(0, 0, 0, 1);
+    margin: 40px;
+}
+.tarjeta:hover {
+    transform: translateY(-10px);
+}
+.card img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.lis {
+    list-style: none;
+    padding: 0;
+}
+.lis li {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgb(0, 0, 0, 0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.lis li:hover {
+    transform: translateX(10px);
+    box-shadow: 0 12px 25px rgb(0, 0, 0, 15);
+}
+.lis strong {
+    color: #2c5362;
+}
+
+.lista li {
+    position: relative;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    border-left: 8px solid #203a43;
+    transition: all 0.3 ease;
+}
+.lista li:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateX(10px);
+}
+.lista strong {
+    color: #203a43;
+}
