@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/style2.css">
+    <title>home</title>
+
+</head>
+
+<body>
+    <h2>Formulario de Datos Personales</h2>
+    <form>
+        <label>Nombre completo</label>
+        <input type="text" name="nombre">
+        <label>Tipo de identificación</label>
+
+        <select name="tipo_id">
+            <option>Cédula</option>
+            <option>Tarjeta de identidad</option>
+            <option>Pasaporte</option>
+        </select>
+
+        <label>Número de identificación</label>
+        <input type="text" name="numero_id">
+
+        <label>Correo electrónico</label>
+        <input type="email" name="correo">
+
+        <label>Número de teléfono</label>
+        <input type="text" name="telefono">
+
+        <label>Dirección</label>
+        <input type="text" name="direccion">
+
+        <label>Fecha de nacimiento</label>
+        <input type="date" name="fecha">
+
+        <label>Edad</label>
+        <input type="number" name="edad">
+
+        <label>Género</label>
+
+        <div class="opciones">
+            <input type="radio" name="genero"> Masculino
+        </div>
+
+        <div class="opciones">
+            <input type="radio" name="genero"> Femenino
+        </div>
+
+        <div class="opciones">
+            <input type="radio" name="genero"> Otro
+        </div>
+
+        <label>Preferencias</label>
+        <div class="opciones">
+            <input type="checkbox" name="tec"> Tecnologia
+        </div>
+
+        <div class="opciones">
+            <input type="checkbox" name="dep"> Deportes
+        </div>
+
+        <div class="opciones">
+            <input type="checkbox" name="mus"> Musica
+        </div>
+
+        <label>Ocupación</label>
+        <select name="ocupacion">
+            <option>Estudiante</option>
+            <option>Empleado</option>
+            <option>Independiente</option>
+        </select>
+
+        <label>Comentario</label>
+        <textarea name="comentario" rows="4"></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
