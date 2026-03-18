@@ -1,62 +1,156 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #e9eef3;
-}
-
-h2{
-    text-align: center;
-    color: #333;
-}
-
-form{
-    width: 420px;
-    margin: 30px auto;
-    padding: 25px;
-    background-color: white;
-    border-radius: 6px;
-    box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
-}
-
-label{
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-}
-
-input, select, textarea{
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-textarea{
-    resize: none;
+/* ===== BODY ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #020617, #0f172a);
+    color: #e2e8f0;
+    min-height: 100vh;
 }
 
-input[type="radio"],
-input[type="checkbox"]{
-    width: auto;
-    margin-right: 5px;
+/* ===== HEADER ===== */
+header {
+    text-align: center;
+    padding: 30px;
 }
 
-.opciones{
+header h1 {
+    color: #38bdf8;
+    font-size: 2em;
+}
+
+/* ===== CONTENEDOR ===== */
+.contenedor-formularios {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* ===== CAJA FORM ===== */
+.form-box {
+    background: rgba(15, 23, 42, 0.7);
+    padding: 25px;
+    border-radius: 15px;
+    width: 320px;
+    border: 1px solid #1e293b;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
+}
+
+/* ===== TITULOS ===== */
+.form-box h2 {
+    margin-bottom: 15px;
+    color: #38bdf8;
+    text-align: center;
+}
+
+/* ===== LABEL ===== */
+label {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #cbd5f5;
+}
+
+/* ===== INPUTS ===== */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #1e293b;
+    background: #020617;
+    color: #e2e8f0;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* ===== SELECT Y TEXTAREA ===== */
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #1e293b;
+    background: #020617;
+    color: #e2e8f0;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* ===== EFECTO FOCUS ===== */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 10px #38bdf8;
+}
+
+/* ===== OPCIONES (RADIO / CHECKBOX) ===== */
+.opciones {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     margin-top: 8px;
 }
 
-input[type="submit"]{
-    width: 100%;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin-top: 15px;
-    border-radius: 4px;
-    font-size: 16px;
+/* INPUT RADIO Y CHECKBOX */
+.opciones input {
+    width: auto;
+    accent-color: #38bdf8;
 }
 
-input[type="submit"]:hover{
-    background-color: #0056b3;
+/* ===== BOTONES ===== */
+button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #38bdf8;
+    color: #020617;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER */
+button:hover {
+    background: #0ea5e9;
+    transform: scale(1.03);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: #94a3b8;
+}
+
+/* ===== EFECTO HOVER INPUT ===== */
+input:hover,
+select:hover,
+textarea:hover {
+    border-color: #38bdf8;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .contenedor-formularios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-box {
+        width: 90%;
+    }
 }

@@ -1,82 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/estilos/style2.css">
-    <title>home</title>
 
+    <!-- RUTA CORRECTA -->
+    <link rel="stylesheet" href="/estilos/style2.css">
+
+    <title>Formulario</title>
 </head>
 
 <body>
-    <h2>Formulario de Datos Personales</h2>
-    <form>
-        <label>Nombre completo</label>
-        <input type="text" name="nombre">
-        <label>Tipo de identificación</label>
 
-        <select name="tipo_id">
-            <option>Cédula</option>
-            <option>Tarjeta de identidad</option>
-            <option>Pasaporte</option>
-        </select>
+    <header>
+        <h1>Formulario de Datos Personales</h1>
+    </header>
 
-        <label>Número de identificación</label>
-        <input type="text" name="numero_id">
+    <main class="contenedor-formularios">
 
-        <label>Correo electrónico</label>
-        <input type="email" name="correo">
+        <section class="form-box">
 
-        <label>Número de teléfono</label>
-        <input type="text" name="telefono">
+            <form action="../index/definicion.html" method="get">
 
-        <label>Dirección</label>
-        <input type="text" name="direccion">
+                <label for="nombre">Nombre completo</label>
+                <input id="nombre" type="text" name="nombre" required>
 
-        <label>Fecha de nacimiento</label>
-        <input type="date" name="fecha">
+                <label for="tipo_id">Tipo de identificación</label>
+                <select id="tipo_id" name="tipo_id">
+                    <option value="cc">Cédula</option>
+                    <option value="ti">Tarjeta de identidad</option>
+                    <option value="pasaporte">Pasaporte</option>
+                </select>
 
-        <label>Edad</label>
-        <input type="number" name="edad">
+                <label for="numero_id">Número de identificación</label>
+                <input id="numero_id" type="text" name="numero_id" required>
 
-        <label>Género</label>
+                <label for="correo">Correo electrónico</label>
+                <input id="correo" type="email" name="correo" required>
 
-        <div class="opciones">
-            <input type="radio" name="genero"> Masculino
-        </div>
+                <label for="telefono">Número de teléfono</label>
+                <input id="telefono" type="text" name="telefono">
 
-        <div class="opciones">
-            <input type="radio" name="genero"> Femenino
-        </div>
+                <label for="direccion">Dirección</label>
+                <input id="direccion" type="text" name="direccion">
 
-        <div class="opciones">
-            <input type="radio" name="genero"> Otro
-        </div>
+                <label for="fecha">Fecha de nacimiento</label>
+                <input id="fecha" type="date" name="fecha">
 
-        <label>Preferencias</label>
-        <div class="opciones">
-            <input type="checkbox" name="tec"> Tecnologia
-        </div>
+                <label for="edad">Edad</label>
+                <input id="edad" type="number" name="edad">
 
-        <div class="opciones">
-            <input type="checkbox" name="dep"> Deportes
-        </div>
+                <label>Género</label>
 
-        <div class="opciones">
-            <input type="checkbox" name="mus"> Musica
-        </div>
+                <div class="opciones">
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label>
+                </div>
 
-        <label>Ocupación</label>
-        <select name="ocupacion">
-            <option>Estudiante</option>
-            <option>Empleado</option>
-            <option>Independiente</option>
-        </select>
+                <div class="opciones">
+                    <input type="radio" id="femenino" name="genero" value="femenino">
+                    <label for="femenino">Femenino</label>
+                </div>
 
-        <label>Comentario</label>
-        <textarea name="comentario" rows="4"></textarea>
+                <div class="opciones">
+                    <input type="radio" id="otro" name="genero" value="otro">
+                    <label for="otro">Otro</label>
+                </div>
 
-        <input type="submit" value="Enviar">
-    </form>
+                <label>Preferencias</label>
+
+                <div class="opciones">
+                    <input type="checkbox" id="tec" name="intereses" value="tecnologia">
+                    <label for="tec">Tecnología</label>
+                </div>
+
+                <div class="opciones">
+                    <input type="checkbox" id="dep" name="intereses" value="deportes">
+                    <label for="dep">Deportes</label>
+                </div>
+
+                <div class="opciones">
+                    <input type="checkbox" id="mus" name="intereses" value="musica">
+                    <label for="mus">Música</label>
+                </div>
+
+                <label for="ocupacion">Ocupación</label>
+                <select id="ocupacion" name="ocupacion">
+                    <option value="estudiante">Estudiante</option>
+                    <option value="empleado">Empleado</option>
+                    <option value="independiente">Independiente</option>
+                </select>
+
+                <label for="comentario">Comentario</label>
+                <textarea id="comentario" name="comentario" rows="4"></textarea>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Formulario de Datos</p>
+    </footer>
+
 </body>
 </html>
