@@ -18,7 +18,6 @@ header {
     text-align: center;
     padding: 30px;
     background: rgba(15, 23, 42, 0.7);
-    backdrop-filter: blur(10px);
     border-bottom: 1px solid #1e293b;
 }
 
@@ -76,7 +75,7 @@ nav a:hover {
     margin-bottom: 20px;
     border-radius: 12px;
     border: 1px solid #1e293b;
-    backdrop-filter: blur(8px);
+
 }
 
 .texto h2 {
